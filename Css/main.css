@@ -1,0 +1,352 @@
+/*  start general styling */
+
+:root {
+  --main-color: #0078ff;
+}
+.container-90 {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.head_serv p {
+  color: #4e4e4e;
+  position: relative;
+}
+
+.head_serv p::after {
+  content: "";
+  width: 12%;
+  height: 5px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+h3 {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: system-ui -apple-system "Segoe UI" Roboto "Helvetica Neue" "Noto Sans"
+    "Liberation Sans" Arial sans-serif "Apple Color Emoji" "Segoe UI Emoji" "Segoe UI Symbol"
+    "Noto Color Emoji";
+}
+
+/*  end general styling */
+
+/* start navbar */
+
+nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  padding-left: 0;
+}
+
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
+  position: relative;
+}
+nav .navbar-nav .nav-link.active::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+nav .navbar-nav .nav-link:hover::after{
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+nav .navbar-nav .nav-link::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} 
+nav .navbar-nav .nav-link{
+  transition: all 0.5s;
+}
+
+
+/* end navbar */
+
+/* <!-- start section home  --> */
+
+#home {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.home::after {
+  content: "|";
+  animation: Typing 7s infinite alternate;
+}
+
+@keyframes Typing {
+  0% {
+    content: "De|";
+  }
+  5% {
+    content: "Desi|";
+  }
+  10% {
+    content: "Designer|";
+  }
+  15% {
+    content: "Design|";
+  }
+  20% {
+    content: "Desi|";
+  }
+  25% {
+    content: "De|";
+  }
+  30% {
+    content: "Devolp|";
+  }
+  35% {
+    content: "Devolper|";
+  }
+  40% {
+    content: "Devol|";
+  }
+  45% {
+    content: "Dev|";
+  }
+  50% {
+    content: "|";
+  }
+  55% {
+    content: "Freel|";
+  }
+  60% {
+    content: "Freelancer|";
+  }
+  65% {
+    content: "Freela|";
+  }
+  70% {
+    content: "Fre|";
+  }
+  75% {
+    content: "|";
+  }
+  80% {
+    content: "phot|";
+  }
+  85% {
+    content: "photogr|";
+  }
+  90% {
+    content: "photograph|";
+  }
+  95% {
+    content: "photographe|";
+  }
+  100% {
+    content: "photographer|";
+  }
+}
+
+.leyar {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.leyar h1 {
+  font-size: 72px;
+  font-family: system-ui -apple-system "Segoe UI" Roboto;
+}
+.leyar p {
+  font-size: 40px;
+  font-family: system-ui -apple-system "Segoe UI" Roboto;
+}
+
+/* <!-- end section home  --> */
+/* start section about */
+#about {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#about .part-tow h3 {
+  position: relative;
+}
+
+#about .part-tow h3::after {
+  content: "";
+  width: 15%;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#about .part-tow p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: system-ui -apple-system "Segoe UI" Roboto;
+  margin-top: 30px;
+  color: #4e4e4e;
+}
+/* end section about */
+/* start section services */
+
+#services .container .row .col-md-4 i {
+  font-size: 40px;
+}
+.icon {
+  width: 7rem;
+  height: 7rem;
+  border: 9px solid var(--main-color);
+  border-radius: 50%;
+}
+#services .container .row .col-md-4 .inner {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.inner:hover .icon {
+  border: 9px solid rgb(164, 194, 237);
+  background-color: var(--main-color);
+  color: #fff;
+  transition: 0.5s all;
+}
+
+/* end section services */
+
+/*   <!-- start section attachment --> */
+#attachment {
+  background-image: url(../images/post-3.jpg);
+  background-size: contain;
+  background-position: center;
+  height: 60vh;
+  background-attachment: fixed;
+  background-color: RGBA(0, 120, 255, 0.7);
+}
+#attachment .leyar {
+  background-color: RGBA(0, 120, 255, 0.7);
+  height: 60vh;
+}
+#attachment .br {
+  width: 5rem;
+  height: 5rem;
+  border: 10px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+#attachment .br i {
+  font-size: 32px;
+}
+
+/*   <!-- end section attachment --> */
+/* start section portfolio */
+.larg {
+  font-size: 40px;
+  color: var(--main-color);
+}
+#portfolio .lay-out {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: 0.5s all;
+}
+#portfolio .lay-out img {
+  transition: 0.6s all;
+}
+.lay-out:hover img {
+  transform: scale(1.2);
+}
+#portfolio .sm {
+  font-size: 12.8px;
+}
+
+/* end section portfolio */
+/* start section slider */
+#slider {
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: contain;
+  background-position: center;
+  height: 80vh;
+  background-attachment: fixed;
+}
+#slider .carousel-inner .carousel-item .put {
+  background-color: rgba(0, 120, 255, 0.6);
+}
+#slider .carousel-inner .carousel-item .put span {
+  font-size: 20px;
+  font-weight: 700;
+}
+#slider .carousel-inner .carousel-item .put img {
+  margin-top: 150px;
+}
+#slider .carousel-inner .carousel-item .put p {
+  margin-bottom: 170px;
+  font-size: 20px;
+  font-weight: 300;
+}
+/* end section slider */
+
+/* start section blog */
+
+#blog .card-footer .icon-foter img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/* end section blog */
+/* start section contact */
+
+#contact {
+  height: 100vh;
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contact .icon-contact .ico {
+  width: 3rem;
+  height: 3rem;
+  border: 3.5px solid var(--main-color);
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+.ico:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+#contact h2::after {
+  content: "";
+  width: 18%;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#contact p {
+  font-size: 20px;
+  color: #4e4e4e;
+  font-weight: 300;
+}
+#contact .back {
+  height: 100%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 120, 255, 0.6);
+}
+/* end section contact */
+/* start section foter */
+
+#foter {
+  background-color: var(--main-color);
+}
+/* send section foter */
